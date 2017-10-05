@@ -61,5 +61,12 @@ namespace MethodDoItSection_FavoriteFood
             Console.WriteLine("Your batting average is " + average);
             return average;
         }
+
+
+        //Additional Method Practice Problems
+        public static string BeingPolite(string arriving, string leaveing)
+        {
+
+        }
     }
 }
