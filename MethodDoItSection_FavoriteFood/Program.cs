@@ -21,6 +21,11 @@ namespace MethodDoItSection_FavoriteFood
             RetirementCalculator(36);
 
             WageCalculator(40.0, 24.79);
+
+            Greetings("Earthling", "cop-pilot");
+
+            BattingAverage(234, 659);
+
         }
         public static void FavoriteFood(string chef, string food)
         {
@@ -44,6 +49,17 @@ namespace MethodDoItSection_FavoriteFood
             double monthlyWage = HoursWorked * HourlyWage;
             Console.WriteLine("The monthly wages are $" + monthlyWage);
             return monthlyWage;
+        }
+    public static void Greetings(string name, string title)
+        {
+            Console.WriteLine(name + " to infinity and beyond " + title);
+        }
+
+    public static double BattingAverage(double hits, double atBats)
+        {
+            double average = hits / atBats;
+            Console.WriteLine("Your batting average is " + average);
+            return average;
         }
     }
 }
