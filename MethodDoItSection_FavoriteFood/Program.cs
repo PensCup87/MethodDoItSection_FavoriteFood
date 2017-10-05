@@ -27,11 +27,11 @@ namespace MethodDoItSection_FavoriteFood
             return;
         }
 
-    public double WageCalculator(double HoursWorked, double HourlyWage)
+    public static double WageCalculator(double HoursWorked, double HourlyWage)
         {
             double monthlyWage = HoursWorked * HourlyWage;
             Console.WriteLine("The monthly wages are $" + monthlyWage);
-            return;
+            return monthlyWage;
         }
     }
 }
