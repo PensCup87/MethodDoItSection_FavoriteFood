@@ -22,7 +22,7 @@ namespace MethodDoItSection_FavoriteFood
 
             WageCalculator(40.0, 24.79);
 
-            Greetings("Earthling", "cop-pilot");
+            Greetings("Earthling", "leader");
 
             BattingAverage(234, 659);
 
@@ -52,7 +52,7 @@ namespace MethodDoItSection_FavoriteFood
         }
     public static void Greetings(string name, string title)
         {
-            Console.WriteLine(name + " to infinity and beyond " + title);
+            Console.WriteLine("Greetings " + name + " take me to your " + title);
         }
 
     public static double BattingAverage(double hits, double atBats)
