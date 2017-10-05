@@ -10,7 +10,13 @@ namespace MethodDoItSection_FavoriteFood
     {
         static void Main(string[] args)
         {
-            FavoriteFood("Uncle Artie", "sauage and peppers");
+            Console.WriteLine("Enter your name.");
+            string userName = Console.ReadLine().ToLower().Trim();
+
+            Console.WriteLine("Enter your favorite food.");
+            string userFood = Console.ReadLine().Trim().ToLower();
+
+            FavoriteFood(userName, userFood);
 
             RetirementCalculator(36);
 
@@ -25,6 +31,12 @@ namespace MethodDoItSection_FavoriteFood
             int retirementAge = 65 - UserAge;
             Console.WriteLine("The user will retire in " + retirementAge + " years.");
             return;
+
+            //Teacher Answer
+            //int retirementAge = Math.Max(0, 65 - UserAge)
+            //if someone is over 65, the retirement age is negative, but with
+            //Math.Max there would not be a negative number returned
+            //Could Conditional Statements, but this was a 1 line fix
         }
 
     public static double WageCalculator(double HoursWorked, double HourlyWage)
