@@ -10,21 +10,29 @@ namespace MethodDoItSection_FavoriteFood
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your name.");
-            string userName = Console.ReadLine().ToLower().Trim();
+            //Console.WriteLine("Enter your name.");
+            //string userName = Console.ReadLine().ToLower().Trim();
 
-            Console.WriteLine("Enter your favorite food.");
-            string userFood = Console.ReadLine().Trim().ToLower();
+            //Console.WriteLine("Enter your favorite food.");
+            //string userFood = Console.ReadLine().Trim().ToLower();
 
-            FavoriteFood(userName, userFood);
+            //FavoriteFood(userName, userFood);
 
-            RetirementCalculator(36);
+            //RetirementCalculator(36);
 
-            WageCalculator(40.0, 24.79);
+            //WageCalculator(40.0, 24.79);
 
-            Greetings("Earthling", "leader");
+            //Greetings("Earthling", "leader");
 
-            BattingAverage(234, 659);
+            //BattingAverage(234, 659);
+
+            //BeingPolite("Hello", "Goodbye");
+
+            //GreetingSpecificUser("Bobo");
+
+            Console.WriteLine(SumIt(8.7, 7.1));
+
+            Console.WriteLine(DoubleIt(7));
 
         }
         public static void FavoriteFood(string chef, string food)
@@ -64,9 +72,53 @@ namespace MethodDoItSection_FavoriteFood
 
 
         //Additional Method Practice Problems
-        public static string BeingPolite(string arriving, string leaveing)
+        public static void BeingPolite(string arriving, string leaving)
         {
-
+            Console.WriteLine(arriving + " Program User thank you for joining us.");
+            Console.WriteLine(leaving + " Program User seen you again.");
         }
+
+        //Greeting a Specific User
+        public static string GreetingSpecificUser(string specificUser)
+        {
+            Console.WriteLine("Enter your first name.");
+            string userName = Console.ReadLine().ToLower().Trim();
+
+            Console.WriteLine("Hello " + userName);
+            Console.WriteLine("Goodbye " + userName);
+            return specificUser;
+        }
+        //Creating an Addition Method with 2 numbers
+
+        public static double SumIt(double digitOne, double digitTwo)
+        {
+            double SumIt = digitOne + digitTwo;
+            return SumIt;
+        }
+
+        ////Performing ADDITION on an ARRAY
+        ////string[] example = {"20", "10", "5", "2" };
+        ////possible = Convert.ToInt32(example);???????????????HELP???????????
+        //static void arrayExample();
+        //int[] array = {20, 10, 5, 2 };
+        //for(int i = 0; i < array.Length; i++)
+        //    {
+        //}
+
+        public static int DoubleIt(int iDigit)
+        {
+            int doubleDigit = iDigit * 2;
+            return doubleDigit;
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }
